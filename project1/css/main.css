@@ -1,0 +1,55 @@
+@import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+/*============================
+=            BASE            =
+============================*/
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+   height: 100vh;
+   background-color: #375356;
+   color: #EEEEEE;
+}
+
+
+button {
+   border: none;
+   outline: none;
+   margin: 0;
+}
+
+span, button {
+   text-transform: uppercase;
+   background-color: #E5E5E5;
+   color: #E0877B;
+   padding: 0.5em 4em;
+   font-weight: 700;
+   font-size: 2em;
+   transition: box-shadow 0.4s ease-in-out;
+}
+
+span:hover, button:hover {
+   background-color: #EEEEEE;
+   box-shadow: 0 0.5em #517375; 
+}
+
+/*============================
+=            MODULES            =
+============================*/
+.flexIt1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+/*============================
+=            PAGES            =
+============================*/
