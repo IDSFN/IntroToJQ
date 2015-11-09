@@ -1,0 +1,129 @@
+@import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+/*============================
+=            BASE            =
+============================*/
+html {
+   font-family: 'Open Sans', sans-serif;
+   background-color: rgba(54,50,59,0.05);
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+}
+
+.registerWrapper {
+   width: 90%;
+   background-color: rgba(54,50,59,0.1);
+   color: rgba(54,50,59,1);
+   box-sizing: border-box;
+   padding: 10% 10%;
+   border-radius: 1%;
+}
+
+form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.registerWrapper label {
+   align-self: flex-start;
+   display: block;
+   margin-bottom: 1%;
+}
+
+.registerWrapper input {
+   width: 100%;
+   margin: 0.5% 0 4% 2%;
+   padding: 2% 0;
+   border: none;
+}
+
+.registerWrapper .correcthint {
+   display: none;
+   background-color: #00BBB6;
+   color: white;
+   padding: 1%;
+   border: 1px dotted white;
+   transform: translate(150%,-170%);
+}
+
+.registerWrapper .correcthint:after {
+   display: none;
+   position: absolute;
+   left: -7%;
+   top: 50%;
+   z-index: -1;
+   transform: translateY(-50%);
+   content: '';
+   width: 0; 
+   height: 0; 
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent; 
+   
+   border-right:10px solid #00BBB6;
+}
+
+.registerWrapper .hint {
+   display: none;
+   width: 70%;
+   color: white;
+   text-align: center;
+   padding: 0%;
+   background-color: rgba(248,79,51,0.8);
+   margin: 0
+   border-radius: 4%;
+   border: 1px dotted white;
+}
+
+.registerWrapper .hint i {
+   margin-right: 2%;
+   margin-left: 2%;
+}
+
+.registerWrapper input[type="submit"] {
+   border: none;
+   background-color: #36323B;
+   color: white;
+   padding: 4%;
+   transition: all 0.2s ease-in-out;
+   text-transform: uppercase;
+   border-radius: 2%;
+   margin-top: 6%;
+}
+
+.registerWrapper input[type="submit"]:hover {
+   background-color: #F84F33;
+   cursor: pointer;
+}
+
+.registerWrapper input[type="submit"]:focus {
+   outline: none;
+}
+
+/*============================
+=            MODULES            =
+============================*/
+.centerVH {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*============================
+=            Media            =
+============================*/
+
+@media (min-width: 520px) {
+   .registerWrapper {
+      width: 50%;
+   }
+
+   .registerWrapper .correcthint {
+      transform: translate(150%,-180%);
+   }
+}
