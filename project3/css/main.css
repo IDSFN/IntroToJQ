@@ -9,10 +9,72 @@ html {
    color: green;
 }
 
+header {
+
+}
+
+nav {
+   background-color: #36323B;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav li {
+   display: inline-block;
+}
+
+nav a {
+   display: block;
+   text-decoration: none;
+   color: white;
+   letter-spacing: 0.05em;
+   line-height: 5vh;
+   padding: 0.4em 1em;
+}
+
+nav a:hover {
+   background-color: rgba(255, 255, 255, 0.08);
+}
+
+.selected {
+   background-color: rgba(248,79,51,0.9);
+}
+.selected a {
+   font-weight: 600;
+   border-bottom: 0.2em white solid;
+}
 /*============================
 =            MODULES            =
 ============================*/
-
+.centerVH {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 /*============================
-=            PAGES            =
+=        Media ueries     =
 ============================*/
+@media (max-width: 520px) {
+   ul {
+      display: none;
+   }
+   select {
+      width: 100%;
+      color: white;
+      border: none;
+      outline: none;
+      appearance:none;
+      background-color: #36323B;
+      cursor:pointer;
+      padding: 0.5em;
+   }
+}
+@media (min-width: 520px) {
+   select {
+      display: none;
+   }
+}
